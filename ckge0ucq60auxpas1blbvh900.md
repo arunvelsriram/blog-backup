@@ -70,6 +70,6 @@ As you can see in the screenshot, I did `anvim .` within my dotfiles directory a
 
 Alacritty Neovim configuration I use and the `anvim` function is available in my dotfiles repo as well:
 
-* [anvim.yml](https://github.com/arunvelsriram/dotfiles/blob/6826c8f363d49b3809051ffbea414e7509e31ea9/oh-my-zsh-custom/plugins/personal/personal.plugin.zsh#L25)
+* [anvim.yml](https://github.com/arunvelsriram/dotfiles/blob/master/config/alacritty/anvim.yml)
 
 * [`anvim` function](https://github.com/arunvelsriram/dotfiles/blob/master/oh-my-zsh-custom/plugins/personal/personal.plugin.zsh#L25)

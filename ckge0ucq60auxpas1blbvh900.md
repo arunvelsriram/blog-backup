@@ -1,4 +1,4 @@
-## Using Alacritty as a Neovim UI
+## Using Alacritty as a Neovim GUI
 
 I have been using [Alacritty](https://github.com/alacritty/alacritty) + [Tmux](https://github.com/tmux/tmux) as my default terminal for 2 years now and am very happy with it. 
 

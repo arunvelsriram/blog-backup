@@ -74,4 +74,4 @@ Alacritty Neovim configuration I use and the `anvim` function is available in my
 
 * [`anvim` function](https://github.com/arunvelsriram/dotfiles/blob/master/oh-my-zsh-custom/plugins/personal/personal.plugin.zsh#L25)
 
-> This is not a full-fledged Neovim GUI. All it does is separates the Neovim editor from the main Alacritty instance like how a Neovim GUI but without compromising performance benefits provided by Alacritty.
+> Note: This is not a full-fledged Neovim GUI. All it does is separates the Neovim editor from the main Alacritty instance like how a Neovim GUI but without compromising performance benefits provided by Alacritty.

@@ -1,10 +1,12 @@
-## Using Alacritty as a Neovim GUI
+## Starting Neovim in a Separate Alacritty Window
+
+> This is not a full-fledged Neovim GUI. All it does is separates the terminal and editor like a GUI wihout compromising performance.
 
 I have been using [Alacritty](https://github.com/alacritty/alacritty) + [Tmux](https://github.com/tmux/tmux) as my default terminal for 2 years now and am very happy with it. 
 
-[Vim](https://www.vim.org/) is one of my go to editors. I use [Neovim](https://neovim.io/), a Vim fork with additional features. For any development activities I find it inconvenient to use Vim inside terminal as I will be using it for various other things. I prefer a GUI. For Neovim there are a lot of GUIs available as mentioned in [their wiki page](https://github.com/neovim/neovim/wiki/Related-projects). I have used VimR, Oni, gnvim and neovide. Among them I chose VimR as I find it very stable. However, none of these GUIs were as fast as Neovim running inside terminals like Alacritty.
+[Vim](https://www.vim.org/) is one of my go to editors. I use [Neovim](https://neovim.io/), a Vim fork with additional features. For any development activities I find it inconvenient to use Vim inside terminal as I will be using the terminal for various other things as well. I prefer a GUI. For Neovim there are a lot of GUIs available as mentioned in [their wiki page](https://github.com/neovim/neovim/wiki/Related-projects). I have used VimR, Oni, gnvim and neovide. Among them I chose VimR as I find it very stable. However, none of these GUIs were as fast as Neovim running inside terminals like Alacritty.
 
-Recently I came to know that, any number of Alacritty instances can be started using the `alacritty` commad. It has an option to start Alacritty with a different configuration. Also, we can pass a command the will be executed on startup. It even has a way to set a custom title in title bar. On looking at these options I got an idea, which is using Alacritty like a Neovim GUI.
+Recently I came to know that, any number of Alacritty instances can be started using the `alacritty` commad. It has an option to start Alacritty with a different configuration. Also, we can pass a command the will be executed on startup. It even has a way to set a custom title in title bar. On looking at these options I got an idea of starting Neovim in a separate Alacritty window similar to a Neovim GUI.
 
 ```
 > alacritty -h

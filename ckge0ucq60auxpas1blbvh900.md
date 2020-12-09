@@ -1,6 +1,6 @@
 ## Starting Neovim in a Separate Alacritty Window
 
-> This is not a full-fledged Neovim GUI. All it does is separates the terminal and editor like a GUI wihout compromising performance.
+> This is not a full-fledged Neovim GUI. All it does is separates the terminal and editor like a GUI without compromising performance.
 
 I have been using [Alacritty](https://github.com/alacritty/alacritty) + [Tmux](https://github.com/tmux/tmux) as my default terminal for 2 years now and am very happy with it. 
 

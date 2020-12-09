@@ -68,7 +68,7 @@ anvim() {
 
 ![Screenshot 2020-10-17 at 11.29.51 PM.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1602957619049/eJfyVfAVH.png)
 
-As you can see in the screenshot, I did `anvim .` within my dotfiles directory and it opened it in Neovim inside a new Alacritty instance. Also, notice the title in the new instance.
+As you can see in the screenshot, I did `anvim .` within  `~/dotfiles` directory and it is opened in Neovim inside a new Alacritty window. The title is also set appropriately in the Alacritty window.
 
 Alacritty Neovim configuration I use and the `anvim` function is available in my dotfiles repo as well:
 

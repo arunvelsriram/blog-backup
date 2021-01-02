@@ -14,7 +14,7 @@ hyper - b : open "/Applications/Firefox Developer Edition.app"
 
 But it didn't work as expected. All I got was this:
 
-![Firefox Safe Mode prompt screenshot](https://cdn.hashnode.com/res/hashnode/image/upload/v1609608144390/SzNxuryKZ.png)
+![Firefox Safe Mode prompt screenshot](https://cdn.hashnode.com/res/hashnode/image/upload/v1609608514081/2iFGJa518.png)
 
 Firefox was trying to start in Safe Mode. After some research, I came to know that **pressing `Alt` while opening Firefox signals it to open in Safe Mode**.
 

@@ -33,7 +33,7 @@ I started of with creating a new Alacritty configuration because my [default con
 Then I was able to launch Neovim like this:
 
 ```
-> alacritty --config-file ~/.config/alacritty/anvim.yml --title nvim  -e $SHELL -lc "nvim"
+> alacritty --config-file ~/.config/alacritty/anvim.yml --title nvim  --working-directory ~/ -e $SHELL -lc "nvim"
 ```
 
 
@@ -48,18 +48,11 @@ Nice. But this has few issues:
 
 So, how do we solve these? I wrote a shell function called `anvim`. It starts the alacritty process in the background and will ignore any hungup signal. So it won't be killed even if we close the terminal/tmux pane. It is also capable of opening `$PWD` or a given directory or file.
 
-```bash
-# alacritty neovim
-anvim() {
-  if [ -n "${1}" ]; then
-    local target=$(realpath $1)
-  fi
 
-  nohup alacritty --config-file ~/.config/alacritty/anvim.yml -t "nvim - ${target}" -e $SHELL -lc "nvim ${target}" >/dev/null &
-}
-```
+%[https://gist.github.com/arunvelsriram/b601c8ead37341aa74983fe823c33af1]
 
-* First argument is the file or directory to open. If not given, it opens home directory
+
+* First argument is the file or directory to open. If not given, it opens the present working directory
 * [`nohup`](https://en.wikipedia.org/wiki/Nohup) is used to ignore `hangup` signal from terminal
 * Trailing `&` pushes the process to background
 * `>/dev/null` redirects stdout to null
@@ -70,8 +63,8 @@ As you can see in the screenshot, I did `anvim .` within  `~/dotfiles` directory
 
 Alacritty Neovim configuration I use and the `anvim` function is available in my dotfiles repo as well:
 
-* [anvim.yml](https://github.com/arunvelsriram/dotfiles/blob/b0d518588ecd569056c5cf5f56d3c76c0a84f8cd/config/alacritty/anvim.yml)
+* [anvim.yml](https://github.com/arunvelsriram/dotfiles/blob/571ed95b08c7e58b31d1fbec148909d2d42c31ae/config/alacritty/anvim.yml)
 
-* [`anvim` function](https://github.com/arunvelsriram/dotfiles/blob/master/oh-my-zsh-custom/plugins/personal/personal.plugin.zsh#L37)
+* [`anvim` function](https://github.com/arunvelsriram/dotfiles/blob/571ed95b08c7e58b31d1fbec148909d2d42c31ae/oh-my-zsh-custom/plugins/personal/personal.plugin.zsh#L37-L53)
 
-> Note: This is not a full-fledged Neovim GUI. All it does is separates the Neovim editor from the main Alacritty instance like how a Neovim GUI but without compromising performance benefits provided by Alacritty.
+> Note: This is not a full-fledged Neovim GUI. All it does is separates the Neovim editor from the main Alacritty instance like how a Neovim GUI does without compromising the performance benefits provided by Alacritty. Actually, this is a Neovim TUI (Terminal UI).

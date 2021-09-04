@@ -70,8 +70,8 @@ As you can see in the screenshot, I did `anvim .` within  `~/dotfiles` directory
 
 Alacritty Neovim configuration I use and the `anvim` function is available in my dotfiles repo as well:
 
-* [anvim.yml](https://github.com/arunvelsriram/dotfiles/blob/master/config/alacritty/anvim.yml)
+* [anvim.yml](https://github.com/arunvelsriram/dotfiles/blob/b0d518588ecd569056c5cf5f56d3c76c0a84f8cd/config/alacritty/anvim.yml)
 
-* [`anvim` function](https://github.com/arunvelsriram/dotfiles/blob/master/oh-my-zsh-custom/plugins/personal/personal.plugin.zsh#L25)
+* [`anvim` function](https://github.com/arunvelsriram/dotfiles/blob/b0d518588ecd569056c5cf5f56d3c76c0a84f8cd/oh-my-zsh-custom/plugins/personal/personal.plugin.zsh#L24)
 
 > Note: This is not a full-fledged Neovim GUI. All it does is separates the Neovim editor from the main Alacritty instance like how a Neovim GUI but without compromising performance benefits provided by Alacritty.

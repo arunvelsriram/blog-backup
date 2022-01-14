@@ -1,4 +1,4 @@
-## Adding JARs to Spark Jobs on AWS EMR
+## Adding Custom JARs to Spark Jobs on AWS EMR
 
 I was working on a Spark job to process data and load it into a Database. The database provides support for reading/writing via Spark using a connector available as a JAR. I need to run this Spark job on AWS EMR, so the connector JAR should be available to the Spark cluster.
 
